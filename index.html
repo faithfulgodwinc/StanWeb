@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>StanWeb</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a8c4decf06.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <h3 class="logo">Stanley Web</h3>
+                    
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Operations Manager</p>
+                    <h1>Hi, I'm <span>Stanley</span><br> Oriala from Nigeria</h1>
+                    
+                </div>
+            </div>
+        </div>
+<!------about------->
+        <div id="about">
+
+            <div class="container">
+                    <div class="about-col-1">
+                            <h1 class="sub-title">About Me</h1>
+                            <p>Operations Manager at MTHVAC - The best you can think of, and even beyound!</p>
+                            <p>
+                                At Mechanical Technologies HVAC, I am a seasoned operations leader with a passion for driving efficiency, productivity, and customer 
+                                satisfaction. 
+                                With over 5 years of experience in the HVAC industry, I have developed
+                                a unique blend of technical expertise, business acumen, and leadership 
+                                skills that enable me to deliver exceptional results.
+                            </p>
+                            <p>
+                                I believe that effective operations management is the backbone of any successful organization. It's about more than just managing processes and resources, it's about creating a culture of continuous improvement, empowering teams to excel, and delivering unparalleled customer experiences.   `    
+                         </p>
+                           
+                    </div>
+            </div>
+        
+        </div>
+     <!-------services------->
+     <!---   <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-car"></i>
+                        <h2>Automobile Engineering</h2>
+                        <p>All the relief you can get for when it's moving it's Mechanical</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-solar-panel"></i>
+                        <h2>Green automation</h2>
+                        <p>Cool upgrade to a green environment- zero emission</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-plane-lock"></i>
+                        <h2>Flight engineering</h2>
+                        <p>Management of air craft parts and their functionality</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>-->
+        <!--portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">Company Projects</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://www.mthvac.com/sites/default/files/slide-2-silo.png">
+                    <div class="layer">
+                        <h3>MTHVAC Featured Project</h3>
+                        <a href="https://www.mthvac.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i>></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://www.mthvac.com/sites/default/files/slide-1-silo_0.png">
+                    <div class="layer">
+                    <h3>MTHVAC Featured Project</h3>
+                    <a href="https://www.mthvac.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i>></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://www.mthvac.com/sites/default/files/slide-4-silo.png">
+                    <div class="layer">
+                    <h3>MTHVAC Featured Project</h3>
+                    <a href="https://www.mthvac.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i>></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.mthvac.com/" class="btn">See more</a>
+        </div>
+    </div>
+    <!--contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <div class="social-icons">
+                    <a href="">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/stanley-oriala-baa58b169/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn-2">Submit</button>
+                </form>
+                <span id="msg">send a message</span>
+            </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Made by Faithful C. Godwin</p>
+        </div>
+    </div>
+    
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+        </script> 
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxbuERhFu6HdVSdzD7jAoTsmNnFECSeaWJpEN2AeBL0QthCbF_A9q4lilerkT5MUhT2NQ/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = 'Message sent successfully'
+                    setTimeout(function(){
+                        msg.innerHTML = ''
+                    },5000)
+                 form.reset()   
+            })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
